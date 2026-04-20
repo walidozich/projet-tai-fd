@@ -252,16 +252,16 @@ Objectif : extraire uniquement la personne en utilisant l'image couleur et l'inf
 
 ## Visualisations a produire
 
-- [ ] Image originale.
-- [ ] Masque Ground Truth.
-- [ ] Masque predit.
-- [ ] Superposition du masque predit sur l'image originale.
-- [ ] Comparaison cote a cote : original / GT / prediction / overlay.
-- [ ] Histogrammes avant/apres preprocessing si pertinent.
-- [ ] Courbe du coude pour K-Means.
-- [ ] PCA 2D des features colorees par cluster.
-- [ ] Matrice de confusion.
-- [ ] Sauvegarder toutes les figures dans `outputs/visualisations/`.
+- [x] Image originale.
+- [x] Masque Ground Truth.
+- [x] Masque predit.
+- [x] Superposition du masque predit sur l'image originale.
+- [x] Comparaison cote a cote : original / GT / prediction / overlay.
+- [x] Histogrammes avant/apres preprocessing si pertinent.
+- [x] Courbe du coude pour K-Means.
+- [x] PCA 2D des features colorees par cluster.
+- [x] Matrice de confusion.
+- [x] Sauvegarder toutes les figures dans `outputs/visualisations/`.
 
 ## Comparaison des methodes
 
