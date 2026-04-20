@@ -70,16 +70,16 @@ Projet TAI-FD/
 
 ## Exploration des donnees
 
-- [ ] Afficher chaque image originale.
-- [ ] Afficher chaque masque Ground Truth.
-- [ ] Afficher les dimensions : hauteur, largeur, nombre de canaux.
-- [ ] Afficher le type de donnees : `uint8`, `float`, etc.
-- [ ] Afficher les valeurs min/max par canal.
-- [ ] Afficher les valeurs uniques dans les masques.
-- [ ] Verifier si les masques sont binaires ou multi-classes.
-- [ ] Tracer les histogrammes des intensites pour chaque scene.
-- [ ] Tracer les histogrammes RGB si utile.
-- [ ] Noter les difficultes visuelles de chaque scene.
+- [x] Afficher chaque image originale. Saved overview figures.
+- [x] Afficher chaque masque Ground Truth. Saved overview figures.
+- [x] Afficher les dimensions : hauteur, largeur, nombre de canaux.
+- [x] Afficher le type de donnees : `uint8`, `float`, etc.
+- [x] Afficher les valeurs min/max par canal.
+- [x] Afficher les valeurs uniques dans les masques.
+- [x] Verifier si les masques sont binaires ou multi-classes.
+- [x] Tracer les histogrammes des intensites pour chaque scene.
+- [x] Tracer les histogrammes RGB si utile.
+- [x] Noter les difficultes visuelles de chaque scene.
 
 ## Fonctions communes a implementer
 
