@@ -15,3 +15,7 @@ venv/
 
 # Local tool caches
 .cache/
+
+# Temporary smoke-test artifacts
+outputs/masks_predits/smoke_*.png
+outputs/visualisations/smoke_*.png

@@ -83,19 +83,19 @@ Projet TAI-FD/
 
 ## Fonctions communes a implementer
 
-- [ ] Fonction `load_image(path, rgb=True)`.
-- [ ] Fonction `load_mask(path)`.
-- [ ] Fonction `save_mask(mask, path)`.
-- [ ] Fonction `show_image_mask(image, mask, title)`.
-- [ ] Fonction `overlay_mask(image, mask)`.
-- [ ] Fonction `normalize_minmax(features)`.
-- [ ] Fonction `standardize_zscore(features)`.
-- [ ] Fonction `resize_for_clustering(image, max_size)` si les images sont trop grandes.
-- [ ] Fonction `extract_rgb_features(image)`.
-- [ ] Fonction `extract_rgb_xy_features(image)`.
-- [ ] Fonction `extract_gray_gradient_xy_features(image)`.
-- [ ] Fonction `remove_small_components(mask, min_area)`.
-- [ ] Fonction `keep_largest_component(mask)`.
+- [x] Fonction `load_image(path, rgb=True)`.
+- [x] Fonction `load_mask(path)`.
+- [x] Fonction `save_mask(mask, path)`.
+- [x] Fonction `show_image_mask(image, mask, title)`.
+- [x] Fonction `overlay_mask(image, mask)`.
+- [x] Fonction `normalize_minmax(features)`.
+- [x] Fonction `standardize_zscore(features)`.
+- [x] Fonction `resize_for_clustering(image, max_size)` si les images sont trop grandes.
+- [x] Fonction `extract_rgb_features(image)`.
+- [x] Fonction `extract_rgb_xy_features(image)`.
+- [x] Fonction `extract_gray_gradient_xy_features(image)`.
+- [x] Fonction `remove_small_components(mask, min_area)`.
+- [x] Fonction `keep_largest_component(mask)`.
 
 ## Pretraitement TAI
 

@@ -21,11 +21,38 @@ def load_rgb_image(path: str | Path) -> np.ndarray:
         return np.asarray(image.convert("RGB"))
 
 
+def load_image(path: str | Path, rgb: bool = True) -> np.ndarray:
+    """Load an image as a NumPy array.
+
+    If `rgb` is true, the image is converted to RGB. Otherwise, its original
+    mode is preserved.
+    """
+
+    with Image.open(path) as image:
+        if rgb:
+            image = image.convert("RGB")
+        return np.asarray(image.copy())
+
+
 def load_mask_raw(path: str | Path) -> np.ndarray:
     """Load a mask without changing its color mode."""
 
     with Image.open(path) as mask:
         return np.asarray(mask.copy())
+
+
+def load_mask(path: str | Path) -> np.ndarray:
+    """Load a segmentation mask without changing labels or channels."""
+
+    return load_mask_raw(path)
+
+
+def save_mask(mask: np.ndarray, path: str | Path) -> None:
+    """Save a mask array to disk, creating parent directories if needed."""
+
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    Image.fromarray(mask).save(path)
 
 
 def resize_mask_nearest(mask: np.ndarray, target_shape: tuple[int, int]) -> np.ndarray:
