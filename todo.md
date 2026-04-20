@@ -49,12 +49,12 @@ Projet TAI-FD/
 
 ## Installation et environnement
 
-- [ ] Creer un environnement Python si necessaire.
-- [ ] Installer les bibliotheques utiles : `numpy`, `pandas`, `matplotlib`, `opencv-python`, `scikit-learn`, `scipy`, `Pillow`, `jupyter`.
-- [ ] Verifier si `scikit-learn-extra` est disponible pour K-Medoids.
-- [ ] Si K-Medoids n'est pas disponible, implementer une version simple PAM ou expliquer la limitation.
-- [ ] Creer un fichier `requirements.txt`.
-- [ ] Tester l'import de toutes les bibliotheques.
+- [x] Creer un environnement Python si necessaire. Current environment is sufficient.
+- [x] Installer les bibliotheques utiles : `numpy`, `pandas`, `matplotlib`, `opencv-python`, `scikit-learn`, `scipy`, `Pillow`, `jupyter`. Already available.
+- [x] Verifier si `scikit-learn-extra` est disponible pour K-Medoids. Available.
+- [x] Si K-Medoids n'est pas disponible, implementer une version simple PAM ou expliquer la limitation. Not needed because `scikit-learn-extra` is available.
+- [x] Creer un fichier `requirements.txt`.
+- [x] Tester l'import de toutes les bibliotheques.
 
 ## Chargement du dataset
 

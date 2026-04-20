@@ -1,0 +1,17 @@
+# Local Codex/session metadata
+.codex
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local tool caches
+.cache/
