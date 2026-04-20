@@ -210,27 +210,27 @@ Objectif : isoler exclusivement les routes.
 
 Objectif : extraire uniquement la personne en utilisant l'image couleur et l'information supplementaire.
 
-- [ ] Charger image couleur.
-- [ ] Charger image supplementaire.
-- [ ] Charger masque Ground Truth.
-- [ ] Verifier que les images sont alignees.
-- [ ] Verifier que les dimensions correspondent.
-- [ ] Afficher les deux images et le masque.
-- [ ] Analyser le role de l'image supplementaire : profondeur, carte thermique, contraste, autre.
-- [ ] Tester Otsu sur l'image supplementaire.
-- [ ] Tester seuil simple sur l'image supplementaire.
-- [ ] Construire features `[R, G, B, extra]`.
-- [ ] Construire features `[R, G, B, extra, x, y]`.
-- [ ] Normaliser les features.
-- [ ] Appliquer K-Means avec plusieurs valeurs de `k`.
-- [ ] Tester DBSCAN si l'image supplementaire separe bien la personne.
-- [ ] Identifier le cluster correspondant a la personne.
-- [ ] Utiliser composantes connexes pour garder uniquement la personne debout.
-- [ ] Supprimer les autres objets/personnes si presents.
-- [ ] Calculer IoU, Dice/F1, precision, recall, accuracy.
-- [ ] Mettre l'accent sur precision pour eviter d'inclure le fond.
-- [ ] Sauvegarder masque predit et visualisations.
-- [ ] Ecrire une interpretation : parties manquees, fond inclus, effet de l'image supplementaire.
+- [x] Charger image couleur.
+- [x] Charger image supplementaire.
+- [x] Charger masque Ground Truth. GT loaded separately after prediction.
+- [x] Verifier que les images sont alignees.
+- [x] Verifier que les dimensions correspondent.
+- [x] Afficher les deux images et le masque.
+- [x] Analyser le role de l'image supplementaire : profondeur, carte thermique, contraste, autre.
+- [x] Tester Otsu sur l'image supplementaire.
+- [x] Tester seuil simple sur l'image supplementaire.
+- [x] Construire features `[R, G, B, extra]`.
+- [x] Construire features `[R, G, B, extra, x, y]`.
+- [x] Normaliser les features.
+- [x] Appliquer K-Means avec plusieurs valeurs de `k`.
+- [x] Tester DBSCAN si l'image supplementaire separe bien la personne.
+- [x] Identifier le cluster correspondant a la personne.
+- [x] Utiliser composantes connexes pour garder uniquement la personne debout.
+- [x] Supprimer les autres objets/personnes si presents.
+- [x] Calculer IoU, Dice/F1, precision, recall, accuracy.
+- [x] Mettre l'accent sur precision pour eviter d'inclure le fond.
+- [x] Sauvegarder masque predit et visualisations.
+- [x] Ecrire une interpretation : parties manquees, fond inclus, effet de l'image supplementaire.
 
 ## Evaluation des performances
 

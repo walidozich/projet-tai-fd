@@ -1,0 +1,287 @@
+{
+  "best_method": "kmeans_rgb_extra_xy_k5",
+  "best_metrics": {
+    "scene": "scene4",
+    "method": "kmeans_rgb_extra_xy_k5",
+    "tp": 29210,
+    "tn": 242449,
+    "fp": 3169,
+    "fn": 9738,
+    "accuracy": 0.9546432110652713,
+    "precision": 0.9021279224188518,
+    "recall": 0.7499743247406799,
+    "f1": 0.8190446815371459,
+    "dice": 0.8190446815371459,
+    "iou": 0.693544174561341
+  },
+  "method_details": {
+    "otsu_threshold": 130.0,
+    "kmeans_rgb_extra_xy_k2": {
+      "inertia": 85326.78125,
+      "selected_cluster": 0,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "pixel_count": 96967,
+          "area_ratio": 0.3407539902869633,
+          "mean_extra": 113.95756288221766,
+          "mean_x": 0.46978683851589065,
+          "mean_y": 0.5357195747006713,
+          "person_score": -44.01966691184564
+        },
+        {
+          "cluster": 1,
+          "pixel_count": 187599,
+          "area_ratio": 0.6592460097130367,
+          "mean_extra": 126.44826998011716,
+          "mean_x": 0.5156167124005439,
+          "mean_y": 0.4815371084067612,
+          "person_score": -63.20977866282263
+        }
+      ]
+    },
+    "kmeans_rgb_extra_xy_k3": {
+      "inertia": 55566.4609375,
+      "selected_cluster": 1,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "pixel_count": 95621,
+          "area_ratio": 0.3360239803771357,
+          "mean_extra": 109.94524215392016,
+          "mean_x": 0.466413390518974,
+          "mean_y": 0.5438064860229447,
+          "person_score": -40.128470285528635
+        },
+        {
+          "cluster": 1,
+          "pixel_count": 83386,
+          "area_ratio": 0.2930286822740594,
+          "mean_extra": 65.45984937519488,
+          "mean_x": 0.5317482906358737,
+          "mean_y": 0.8104060633679515,
+          "person_score": -21.3607684599203
+        },
+        {
+          "cluster": 2,
+          "pixel_count": 105559,
+          "area_ratio": 0.37094733734880486,
+          "mean_extra": 178.10118511922244,
+          "mean_x": 0.5053450887392096,
+          "mean_y": 0.2151134436665751,
+          "person_score": -112.0110887920716
+        }
+      ]
+    },
+    "kmeans_rgb_extra_xy_k4": {
+      "inertia": 47115.328125,
+      "selected_cluster": 3,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "pixel_count": 59862,
+          "area_ratio": 0.21036244667317952,
+          "mean_extra": 174.32725268116667,
+          "mean_x": 0.7578540519738608,
+          "mean_y": 0.22827519167100205,
+          "person_score": -109.73707779201625
+        },
+        {
+          "cluster": 1,
+          "pixel_count": 92515,
+          "area_ratio": 0.32510911352726607,
+          "mean_extra": 108.56522726044425,
+          "mean_x": 0.4722265258286444,
+          "mean_y": 0.5469381902033904,
+          "person_score": -38.3190995476742
+        },
+        {
+          "cluster": 2,
+          "pixel_count": 51600,
+          "area_ratio": 0.18132876028759584,
+          "mean_extra": 176.36505813953488,
+          "mean_x": 0.2095569193224232,
+          "mean_y": 0.22804115909929862,
+          "person_score": -115.69316758395048
+        },
+        {
+          "cluster": 3,
+          "pixel_count": 80589,
+          "area_ratio": 0.28319967951195857,
+          "mean_extra": 64.42275000310217,
+          "mean_x": 0.526314592148639,
+          "mean_y": 0.8220858926156175,
+          "person_score": -22.5175196487287
+        }
+      ]
+    },
+    "kmeans_rgb_extra_xy_k5": {
+      "inertia": 41289.4453125,
+      "selected_cluster": 1,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "pixel_count": 58904,
+          "area_ratio": 0.20699591658877026,
+          "mean_extra": 175.09902553307077,
+          "mean_x": 0.758242947721591,
+          "mean_y": 0.22673596424852707,
+          "person_score": -110.4613871543178
+        },
+        {
+          "cluster": 1,
+          "pixel_count": 60016,
+          "area_ratio": 0.2109036216554332,
+          "mean_extra": 76.53420754465476,
+          "mean_x": 0.5977115978948824,
+          "mean_y": 0.5313582727145777,
+          "person_score": -5.078663013770614
+        },
+        {
+          "cluster": 2,
+          "pixel_count": 79299,
+          "area_ratio": 0.2786664605047687,
+          "mean_extra": 64.7110808459123,
+          "mean_x": 0.5233082898154336,
+          "mean_y": 0.8255950624489949,
+          "person_score": -22.273716459901657
+        },
+        {
+          "cluster": 3,
+          "pixel_count": 49802,
+          "area_ratio": 0.1750103666636211,
+          "mean_extra": 175.960363037629,
+          "mean_x": 0.21278879176353174,
+          "mean_y": 0.21764626014254543,
+          "person_score": -115.17332059035775
+        },
+        {
+          "cluster": 4,
+          "pixel_count": 36545,
+          "area_ratio": 0.1284236345874068,
+          "mean_extra": 163.35148447119988,
+          "mean_x": 0.26411456195557986,
+          "mean_y": 0.5672257425613562,
+          "person_score": -96.35527007648975
+        }
+      ]
+    },
+    "kmeans_rgb_extra_xy_k6": {
+      "inertia": 35753.9609375,
+      "selected_cluster": 5,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "pixel_count": 58108,
+          "area_ratio": 0.20419867447270582,
+          "mean_extra": 176.69200454326426,
+          "mean_x": 0.7541763867536567,
+          "mean_y": 0.2241467939829611,
+          "person_score": -111.88094303171547
+        },
+        {
+          "cluster": 1,
+          "pixel_count": 43329,
+          "area_ratio": 0.1522634467926597,
+          "mean_extra": 66.03999630732304,
+          "mean_x": 0.7545193835622878,
+          "mean_y": 0.8170874230280171,
+          "person_score": -23.88107963259378
+        },
+        {
+          "cluster": 2,
+          "pixel_count": 41768,
+          "area_ratio": 0.1467779003816338,
+          "mean_extra": 65.4127561769776,
+          "mean_x": 0.27037099108301943,
+          "mean_y": 0.7946542807891209,
+          "person_score": -26.663520856494387
+        },
+        {
+          "cluster": 3,
+          "pixel_count": 35926,
+          "area_ratio": 0.1262483922886079,
+          "mean_extra": 163.92442799087013,
+          "mean_x": 0.26506826790047855,
+          "mean_y": 0.5654143570248898,
+          "person_score": -96.92204416251154
+        },
+        {
+          "cluster": 4,
+          "pixel_count": 47525,
+          "area_ratio": 0.16700870799744172,
+          "mean_extra": 180.3476065228827,
+          "mean_x": 0.21100379917002746,
+          "mean_y": 0.20685658174895416,
+          "person_score": -119.58484252563346
+        },
+        {
+          "cluster": 5,
+          "pixel_count": 57910,
+          "area_ratio": 0.20350287806695108,
+          "mean_extra": 76.85541357278535,
+          "mean_x": 0.6030580978146165,
+          "mean_y": 0.5270185098387481,
+          "person_score": -4.694469449981222
+        }
+      ]
+    },
+    "kmeans_rgb_extra_k5": {
+      "inertia": 13522.0234375,
+      "selected_cluster": 0,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "pixel_count": 42327,
+          "area_ratio": 0.14874229528474942,
+          "mean_extra": 77.98249344390105,
+          "mean_x": 0.47913559246396437,
+          "mean_y": 0.513921880326303,
+          "person_score": -2.807489997084389
+        },
+        {
+          "cluster": 1,
+          "pixel_count": 47505,
+          "area_ratio": 0.16693842553221397,
+          "mean_extra": 79.15545732028208,
+          "mean_x": 0.4484492080755632,
+          "mean_y": 0.5456009542855138,
+          "person_score": -5.767209990225426
+        },
+        {
+          "cluster": 2,
+          "pixel_count": 83516,
+          "area_ratio": 0.2934855182980398,
+          "mean_extra": 193.63141194501654,
+          "mean_x": 0.47222302047245773,
+          "mean_y": 0.21474491343546373,
+          "person_score": -126.76957048439955
+        },
+        {
+          "cluster": 3,
+          "pixel_count": 83448,
+          "area_ratio": 0.29324655791626547,
+          "mean_extra": 73.35365736746238,
+          "mean_x": 0.5662059894474093,
+          "mean_y": 0.7557117977092093,
+          "person_score": -12.580393176741724
+        },
+        {
+          "cluster": 4,
+          "pixel_count": 27770,
+          "area_ratio": 0.09758720296873133,
+          "mean_extra": 195.10658984515663,
+          "mean_x": 0.5045773483241974,
+          "mean_y": 0.49024778366514055,
+          "person_score": -120.20298582461433
+        }
+      ]
+    },
+    "dbscan_extra_candidates": {
+      "candidate_pixels": 106106,
+      "clusters": 68,
+      "noise_count": 17111,
+      "selected_cluster_size": 79516
+    }
+  }
+}
