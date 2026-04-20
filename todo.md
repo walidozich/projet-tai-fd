@@ -107,21 +107,21 @@ Projet TAI-FD/
 
 ## Pretraitement TAI
 
-- [ ] Conversion BGR vers RGB si OpenCV est utilise.
-- [ ] Conversion RGB vers niveaux de gris.
-- [ ] Calcul d'histogramme.
-- [ ] Calcul d'histogramme cumule.
-- [ ] Normalisation d'histogramme si utile.
-- [ ] Filtre moyenneur.
-- [ ] Filtre gaussien avec parametre sigma/kernel.
-- [ ] Filtre median pour bruit impulsionnel.
-- [ ] Sobel horizontal et vertical.
-- [ ] Magnitude du gradient Sobel.
-- [ ] Direction du gradient si necessaire.
-- [ ] Seuillage simple.
-- [ ] Seuillage d'Otsu.
-- [ ] Composantes connexes en 8-connectivite.
-- [ ] Flood fill si utile pour region growing.
+- [x] Conversion BGR vers RGB si OpenCV est utilise.
+- [x] Conversion RGB vers niveaux de gris.
+- [x] Calcul d'histogramme.
+- [x] Calcul d'histogramme cumule.
+- [x] Normalisation d'histogramme si utile.
+- [x] Filtre moyenneur.
+- [x] Filtre gaussien avec parametre sigma/kernel.
+- [x] Filtre median pour bruit impulsionnel.
+- [x] Sobel horizontal et vertical.
+- [x] Magnitude du gradient Sobel.
+- [x] Direction du gradient si necessaire.
+- [x] Seuillage simple.
+- [x] Seuillage d'Otsu.
+- [x] Composantes connexes en 8-connectivite.
+- [x] Flood fill si utile pour region growing.
 
 ## Methodes FD a implementer/utiliser
 
