@@ -68,6 +68,14 @@ Projet TAI-FD/
 - [x] Redimensionner uniquement si necessaire, en gardant la coherence avec le masque. Implemented in-memory alignment: bilinear for extra images, nearest-neighbor for masks.
 - [x] Sauvegarder un resume du dataset dans `outputs/reports/dataset_summary.md`.
 
+## Controle de fuite de donnees
+
+- [x] Definir clairement les fichiers autorises comme entrees de segmentation.
+- [x] Definir clairement que les fichiers `GT*.png` sont reserves a l'evaluation.
+- [x] Ajouter `load_scene_inputs(scene_id)` pour charger uniquement les images d'entree.
+- [x] Ajouter `load_ground_truth(scene_id, target_shape=...)` pour charger les masques uniquement au moment de l'evaluation.
+- [x] Documenter la regle dans `outputs/reports/data_usage_policy.md`.
+
 ## Exploration des donnees
 
 - [x] Afficher chaque image originale. Saved overview figures.

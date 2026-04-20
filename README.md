@@ -34,3 +34,13 @@ outputs/visualisations/
 outputs/metrics/
 outputs/reports/
 ```
+
+## Regle d'utilisation des donnees
+
+Les algorithmes de segmentation utilisent uniquement les images de scene comme entrees. Les masques `GT*.png` sont reserves a l'evaluation et a la comparaison visuelle apres generation d'un masque predit.
+
+- Segmentation : utiliser `load_scene_inputs(scene_id)`.
+- Evaluation : utiliser `load_ground_truth(scene_id, target_shape=...)` apres prediction.
+- Ne pas utiliser les fichiers `GT*.png` comme features ou aide pour le clustering.
+
+Voir `outputs/reports/data_usage_policy.md` pour la regle complete.
