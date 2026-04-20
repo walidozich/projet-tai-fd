@@ -165,21 +165,21 @@ Objectif : segmenter l'image en 4 clusters distincts.
 
 Objectif : extraire la zone lumineuse circulaire.
 
-- [ ] Charger image + masque Ground Truth.
-- [ ] Convertir en niveaux de gris.
-- [ ] Afficher l'histogramme d'intensite.
-- [ ] Tester une normalisation d'histogramme si contraste faible.
-- [ ] Appliquer un filtre gaussien.
-- [ ] Appliquer Otsu.
-- [ ] Appliquer un seuillage simple manuel pour comparaison.
-- [ ] Utiliser les composantes connexes.
-- [ ] Garder la composante correspondant au disque lumineux.
-- [ ] Supprimer les petites regions parasites.
-- [ ] Tester K-Means avec `k = 2` sur l'intensite.
-- [ ] Comparer Otsu, seuil simple, K-Means.
-- [ ] Calculer IoU, Dice/F1, precision, recall, accuracy.
-- [ ] Sauvegarder masque predit et visualisations.
-- [ ] Ecrire une interpretation courte des erreurs : sous-segmentation, sur-segmentation, bruit.
+- [x] Charger image + masque Ground Truth. Image input and GT loaded separately to avoid leakage.
+- [x] Convertir en niveaux de gris.
+- [x] Afficher l'histogramme d'intensite.
+- [x] Tester une normalisation d'histogramme si contraste faible.
+- [x] Appliquer un filtre gaussien.
+- [x] Appliquer Otsu.
+- [x] Appliquer un seuillage simple manuel pour comparaison.
+- [x] Utiliser les composantes connexes.
+- [x] Garder la composante correspondant au disque lumineux.
+- [x] Supprimer les petites regions parasites.
+- [x] Tester K-Means avec `k = 2` sur l'intensite.
+- [x] Comparer Otsu, seuil simple, K-Means.
+- [x] Calculer IoU, Dice/F1, precision, recall, accuracy.
+- [x] Sauvegarder masque predit et visualisations.
+- [x] Ecrire une interpretation courte des erreurs : sous-segmentation, sur-segmentation, bruit.
 
 ## Scene 3 - Routes en vue aerienne
 

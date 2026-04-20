@@ -1,0 +1,77 @@
+{
+  "best_method": "high_percentile_94_largest_component",
+  "otsu_threshold": 51.0,
+  "high_percentile_threshold": 168.0,
+  "metrics": [
+    {
+      "scene": "scene2",
+      "method": "otsu_gaussian_largest_component",
+      "tp": 2051,
+      "tn": 35866,
+      "fp": 88719,
+      "fn": 1098,
+      "accuracy": 0.2968434402743201,
+      "precision": 0.02259557122397268,
+      "recall": 0.6513178786916481,
+      "f1": 0.043675933517179695,
+      "dice": 0.043675933517179695,
+      "iou": 0.022325510515086865
+    },
+    {
+      "scene": "scene2",
+      "method": "simple_threshold_128_largest_component",
+      "tp": 2047,
+      "tn": 105973,
+      "fp": 18612,
+      "fn": 1102,
+      "accuracy": 0.8456636447617706,
+      "precision": 0.09908514448908466,
+      "recall": 0.6500476341695777,
+      "f1": 0.1719590053763441,
+      "dice": 0.1719590053763441,
+      "iou": 0.09406736822756308
+    },
+    {
+      "scene": "scene2",
+      "method": "high_percentile_94_largest_component",
+      "tp": 1401,
+      "tn": 121064,
+      "fp": 3521,
+      "fn": 1748,
+      "accuracy": 0.9587502152911519,
+      "precision": 0.28464039008533115,
+      "recall": 0.44490314385519214,
+      "f1": 0.3471688762235163,
+      "dice": 0.3471688762235163,
+      "iou": 0.21004497751124437
+    },
+    {
+      "scene": "scene2",
+      "method": "kmeans_intensity_k2_largest_component",
+      "tp": 2051,
+      "tn": 35866,
+      "fp": 88719,
+      "fn": 1098,
+      "accuracy": 0.2968434402743201,
+      "precision": 0.02259557122397268,
+      "recall": 0.6513178786916481,
+      "f1": 0.043675933517179695,
+      "dice": 0.043675933517179695,
+      "iou": 0.022325510515086865
+    }
+  ],
+  "best_metrics": {
+    "scene": "scene2",
+    "method": "high_percentile_94_largest_component",
+    "tp": 1401,
+    "tn": 121064,
+    "fp": 3521,
+    "fn": 1748,
+    "accuracy": 0.9587502152911519,
+    "precision": 0.28464039008533115,
+    "recall": 0.44490314385519214,
+    "f1": 0.3471688762235163,
+    "dice": 0.3471688762235163,
+    "iou": 0.21004497751124437
+  }
+}

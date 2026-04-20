@@ -31,6 +31,70 @@ def normalize_mask_by_color_clustering(
     return labels.reshape(mask.shape[:2]).astype(np.int32)
 
 
+def normalize_binary_mask(mask: np.ndarray, foreground: str = "bright") -> np.ndarray:
+    """Convert an anti-aliased or multi-channel mask into binary labels 0/1.
+
+    Parameters:
+    - `foreground='bright'`: foreground is the brighter region.
+    - `foreground='dark'`: foreground is the darker region.
+    - `foreground='nonzero'`: foreground is any non-zero pixel.
+    """
+
+    if mask.ndim == 3:
+        gray = (0.299 * mask[..., 0] + 0.587 * mask[..., 1] + 0.114 * mask[..., 2]).astype(np.uint8)
+    else:
+        gray = mask.astype(np.uint8, copy=False)
+
+    if foreground == "nonzero":
+        return (gray > 0).astype(np.uint8)
+
+    values = gray.reshape(-1, 1).astype(np.float32)
+    labels = KMeans(n_clusters=2, random_state=42, n_init=10).fit_predict(values).reshape(gray.shape)
+    means = [float(gray[labels == label].mean()) for label in range(2)]
+    fg_label = int(np.argmax(means) if foreground == "bright" else np.argmin(means))
+    return (labels == fg_label).astype(np.uint8)
+
+
+def binary_confusion_counts(y_true: np.ndarray, y_pred: np.ndarray) -> dict[str, int]:
+    """Return TP, TN, FP, FN counts for binary masks."""
+
+    true = y_true.astype(bool)
+    pred = y_pred.astype(bool)
+    return {
+        "tp": int(np.logical_and(true, pred).sum()),
+        "tn": int(np.logical_and(~true, ~pred).sum()),
+        "fp": int(np.logical_and(~true, pred).sum()),
+        "fn": int(np.logical_and(true, ~pred).sum()),
+    }
+
+
+def binary_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> dict[str, float | int]:
+    """Compute binary segmentation metrics."""
+
+    counts = binary_confusion_counts(y_true, y_pred)
+    tp = counts["tp"]
+    tn = counts["tn"]
+    fp = counts["fp"]
+    fn = counts["fn"]
+    total = tp + tn + fp + fn
+
+    accuracy = (tp + tn) / total if total else 0.0
+    precision = tp / (tp + fp) if tp + fp > 0 else 0.0
+    recall = tp / (tp + fn) if tp + fn > 0 else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if precision + recall > 0 else 0.0
+    iou = tp / (tp + fp + fn) if tp + fp + fn > 0 else 0.0
+
+    return {
+        **counts,
+        "accuracy": float(accuracy),
+        "precision": float(precision),
+        "recall": float(recall),
+        "f1": float(f1),
+        "dice": float(f1),
+        "iou": float(iou),
+    }
+
+
 def multiclass_confusion_matrix(
     y_true: np.ndarray,
     y_pred: np.ndarray,
