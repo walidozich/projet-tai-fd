@@ -185,26 +185,26 @@ Objectif : extraire la zone lumineuse circulaire.
 
 Objectif : isoler exclusivement les routes.
 
-- [ ] Charger image + masque Ground Truth.
-- [ ] Afficher image et masque.
-- [ ] Analyser les couleurs des routes par rapport au fond.
-- [ ] Tester flou gaussien ou median.
-- [ ] Calculer le gradient Sobel.
-- [ ] Construire features `[R, G, B]`.
-- [ ] Construire features `[R, G, B, intensite, gradient, x, y]`.
-- [ ] Normaliser les features.
-- [ ] Tester K-Means avec `k = 3`, `k = 4`, `k = 5`.
-- [ ] Utiliser la methode du coude pour justifier `k`.
-- [ ] Identifier le cluster correspondant aux routes.
-- [ ] Nettoyer avec composantes connexes.
-- [ ] Supprimer les petites regions non-route.
-- [ ] Tester DBSCAN sur pixels candidats ou image reduite.
-- [ ] Tester une methode TAI simple : seuillage intensite/couleur si possible.
-- [ ] Comparer les methodes.
-- [ ] Calculer IoU, Dice/F1, precision, recall, accuracy.
-- [ ] Mettre l'accent sur recall si l'objectif est de retrouver un maximum de routes.
-- [ ] Sauvegarder masque predit et visualisations.
-- [ ] Ecrire une interpretation : routes manquees, batiments confondus, vegetation confondue.
+- [x] Charger image + masque Ground Truth. Image input and GT loaded separately to avoid leakage.
+- [x] Afficher image et masque.
+- [x] Analyser les couleurs des routes par rapport au fond.
+- [x] Tester flou gaussien ou median.
+- [x] Calculer le gradient Sobel.
+- [x] Construire features `[R, G, B]`.
+- [x] Construire features `[R, G, B, intensite, gradient, x, y]`.
+- [x] Normaliser les features.
+- [x] Tester K-Means avec `k = 3`, `k = 4`, `k = 5`.
+- [x] Utiliser la methode du coude pour justifier `k`.
+- [x] Identifier le cluster correspondant aux routes.
+- [x] Nettoyer avec composantes connexes.
+- [x] Supprimer les petites regions non-route.
+- [x] Tester DBSCAN sur pixels candidats ou image reduite.
+- [x] Tester une methode TAI simple : seuillage intensite/couleur si possible.
+- [x] Comparer les methodes.
+- [x] Calculer IoU, Dice/F1, precision, recall, accuracy.
+- [x] Mettre l'accent sur recall si l'objectif est de retrouver un maximum de routes.
+- [x] Sauvegarder masque predit et visualisations.
+- [x] Ecrire une interpretation : routes manquees, batiments confondus, vegetation confondue.
 
 ## Scene 4 - Extraction de la personne debout
 

@@ -1,0 +1,171 @@
+{
+  "best_method": "tai_hsv_s20_v150_open",
+  "best_metrics": {
+    "scene": "scene3",
+    "method": "tai_hsv_s20_v150_open",
+    "tp": 1009,
+    "tn": 164570,
+    "fp": 672,
+    "fn": 2670,
+    "accuracy": 0.9802156037437619,
+    "precision": 0.6002379535990482,
+    "recall": 0.27425930959499867,
+    "f1": 0.3764925373134329,
+    "dice": 0.3764925373134329,
+    "iou": 0.2319007124798897
+  },
+  "elbow_curve": [
+    {
+      "k": 2,
+      "inertia": 4706.50439453125
+    },
+    {
+      "k": 3,
+      "inertia": 3736.30517578125
+    },
+    {
+      "k": 4,
+      "inertia": 3159.568115234375
+    },
+    {
+      "k": 5,
+      "inertia": 2758.5595703125
+    },
+    {
+      "k": 6,
+      "inertia": 2438.53759765625
+    },
+    {
+      "k": 7,
+      "inertia": 2175.136962890625
+    }
+  ],
+  "detected_elbow_k": 4,
+  "method_details": {
+    "kmeans_road_features_k3": {
+      "inertia": 29892.6875,
+      "selected_cluster": 2,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "area_ratio": 0.37050455538387767,
+          "mean_saturation": 47.104991531652445,
+          "mean_value": 87.20972741507686,
+          "road_score": -83.74561161059069
+        },
+        {
+          "cluster": 1,
+          "area_ratio": 0.4213093694685682,
+          "mean_saturation": 48.979752135791365,
+          "mean_value": 84.83541760341727,
+          "road_score": -95.80858836144229
+        },
+        {
+          "cluster": 2,
+          "area_ratio": 0.2081860751475542,
+          "mean_saturation": 38.22341968322575,
+          "mean_value": 148.03053999488156,
+          "road_score": 16.705394933399987
+        }
+      ],
+      "internal_metrics": {
+        "silhouette": 0.2540397047996521,
+        "davies_bouldin": 1.3804419187505672,
+        "calinski_harabasz": 66468.23072140319,
+        "inertia": 29892.6455078125
+      }
+    },
+    "kmeans_road_features_k4": {
+      "inertia": 25285.478515625,
+      "selected_cluster": 0,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "area_ratio": 0.17958690748929973,
+          "mean_saturation": 38.382383966244724,
+          "mean_value": 152.46100342827003,
+          "road_score": 22.94689893039189
+        },
+        {
+          "cluster": 1,
+          "area_ratio": 0.28594431716601254,
+          "mean_saturation": 45.64084302927415,
+          "mean_value": 83.12423916193947,
+          "road_score": -76.67383529916398
+        },
+        {
+          "cluster": 2,
+          "area_ratio": 0.27560812450790606,
+          "mean_saturation": 46.63942348999055,
+          "mean_value": 92.16620843715096,
+          "road_score": -69.80071199345318
+        },
+        {
+          "cluster": 3,
+          "area_ratio": 0.25886065083678167,
+          "mean_saturation": 51.177762023463764,
+          "mean_value": 86.22706794429071,
+          "road_score": -88.0150701930431
+        }
+      ],
+      "internal_metrics": {
+        "silhouette": 0.24676918983459473,
+        "davies_bouldin": 1.2106825317531533,
+        "calinski_harabasz": 62645.40604569946,
+        "inertia": 25285.39697265625
+      }
+    },
+    "kmeans_road_features_k5": {
+      "inertia": 22082.76953125,
+      "selected_cluster": 4,
+      "cluster_stats": [
+        {
+          "cluster": 0,
+          "area_ratio": 0.23364176153349792,
+          "mean_saturation": 46.12790432513239,
+          "mean_value": 85.55347505510933,
+          "road_score": -71.52157884296767
+        },
+        {
+          "cluster": 1,
+          "area_ratio": 0.14868488820217735,
+          "mean_saturation": 41.09038063385889,
+          "mean_value": 154.50939640070075,
+          "road_score": 19.343463442949894
+        },
+        {
+          "cluster": 2,
+          "area_ratio": 0.24921708964545558,
+          "mean_saturation": 51.54399258872156,
+          "mean_value": 86.19566250178156,
+          "road_score": -88.37368243601958
+        },
+        {
+          "cluster": 3,
+          "area_ratio": 0.2563210021252538,
+          "mean_saturation": 51.307866414153075,
+          "mean_value": 79.62358538500624,
+          "road_score": -94.8056940274733
+        },
+        {
+          "cluster": 4,
+          "area_ratio": 0.11213525849361536,
+          "mean_saturation": 28.19786717347693,
+          "mean_value": 125.01641854080879,
+          "road_score": 31.451996340888776
+        }
+      ],
+      "internal_metrics": {
+        "silhouette": 0.2531954050064087,
+        "davies_bouldin": 1.1986823520303076,
+        "calinski_harabasz": 59922.24923871878,
+        "inertia": 22082.749267578125
+      }
+    },
+    "dbscan_candidate_pixels": {
+      "candidate_pixels": 7616,
+      "noise_count": 77,
+      "clusters": 8
+    }
+  }
+}
