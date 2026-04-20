@@ -143,23 +143,23 @@ Projet TAI-FD/
 
 Objectif : segmenter l'image en 4 clusters distincts.
 
-- [ ] Charger image + masque Ground Truth.
-- [ ] Afficher image et masque.
-- [ ] Appliquer un leger flou gaussien.
-- [ ] Extraire les features `[R, G, B]`.
-- [ ] Extraire les features `[R, G, B, x, y]`.
-- [ ] Normaliser les features.
-- [ ] Appliquer K-Means avec `k = 4`.
-- [ ] Visualiser les 4 clusters.
-- [ ] Associer chaque cluster a une classe : chat, ciel, sol, arbres.
-- [ ] Nettoyer les petites regions avec composantes connexes.
-- [ ] Tester K-Medoids/PAM sur image reduite si necessaire.
-- [ ] Tester AGNES sur image reduite.
-- [ ] Comparer les methodes.
-- [ ] Calculer les metriques multi-classes : accuracy, precision par classe, recall par classe, F1 par classe, IoU par classe, mean IoU.
-- [ ] Calculer les metriques internes : silhouette, Davies-Bouldin, Calinski-Harabasz, inertie.
-- [ ] Sauvegarder masque predit et visualisations.
-- [ ] Ecrire une interpretation courte des resultats.
+- [x] Charger image + masque Ground Truth. Image input and GT loaded separately to avoid leakage.
+- [x] Afficher image et masque.
+- [x] Appliquer un leger flou gaussien.
+- [x] Extraire les features `[R, G, B]`.
+- [x] Extraire les features `[R, G, B, x, y]`.
+- [x] Normaliser les features.
+- [x] Appliquer K-Means avec `k = 4`.
+- [x] Visualiser les 4 clusters.
+- [x] Associer chaque cluster a une classe : chat, ciel, sol, arbres. Heuristic association documented.
+- [x] Nettoyer les petites regions avec composantes connexes.
+- [x] Tester K-Medoids/PAM sur image reduite si necessaire.
+- [x] Tester AGNES sur image reduite.
+- [x] Comparer les methodes.
+- [x] Calculer les metriques multi-classes : accuracy, precision par classe, recall par classe, F1 par classe, IoU par classe, mean IoU.
+- [x] Calculer les metriques internes : silhouette, Davies-Bouldin, Calinski-Harabasz, inertie.
+- [x] Sauvegarder masque predit et visualisations.
+- [x] Ecrire une interpretation courte des resultats.
 
 ## Scene 2 - Disque lumineux
 

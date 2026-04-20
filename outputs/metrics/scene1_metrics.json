@@ -1,0 +1,111 @@
+{
+  "summary": {
+    "scene": "scene1",
+    "method": "kmeans_rgb_xy_k4",
+    "accuracy": 0.6257983391595499,
+    "mean_iou": 0.505713000107824,
+    "mean_f1": 0.6429219222378446,
+    "internal_silhouette": 0.3948841691017151,
+    "internal_davies_bouldin": 0.9879899562208596,
+    "internal_calinski_harabasz": 232645.4419257667,
+    "internal_inertia": 26379.12939453125
+  },
+  "per_class": [
+    {
+      "class": 0,
+      "precision": 0.7944393801276208,
+      "recall": 0.5491402324771585,
+      "f1": 0.649397507672095,
+      "iou": 0.4808206051454788
+    },
+    {
+      "class": 1,
+      "precision": 0.3017911326769688,
+      "recall": 0.4144600344621444,
+      "f1": 0.3492639704847349,
+      "iou": 0.2115807520038776
+    },
+    {
+      "class": 2,
+      "precision": 0.8338993516517443,
+      "recall": 0.9999782220479986,
+      "f1": 0.9094186034996681,
+      "iou": 0.833884207467674
+    },
+    {
+      "class": 3,
+      "precision": 0.6219302419207261,
+      "recall": 0.7112720271231845,
+      "f1": 0.6636076072948802,
+      "iou": 0.49656643581426607
+    }
+  ],
+  "confusion_matrix": [
+    [
+      66234,
+      53894,
+      53,
+      433
+    ],
+    [
+      7580,
+      23572,
+      5495,
+      20227
+    ],
+    [
+      1,
+      0,
+      45917,
+      0
+    ],
+    [
+      9557,
+      641,
+      3598,
+      33986
+    ]
+  ],
+  "pred_to_gt_label_mapping": {
+    "3": 0,
+    "2": 1,
+    "1": 2,
+    "0": 3
+  },
+  "cluster_semantic_mapping_heuristic": {
+    "1": "ciel",
+    "2": "arbres",
+    "3": "sol",
+    "0": "chat"
+  },
+  "method_comparison": [
+    {
+      "method": "kmeans_rgb_full",
+      "silhouette": 0.5578044056892395,
+      "davies_bouldin": 0.554303028296049,
+      "calinski_harabasz": 1592672.495014421,
+      "inertia": 2626.2249145507812
+    },
+    {
+      "method": "kmeans_rgb_xy_full",
+      "silhouette": 0.3948841691017151,
+      "davies_bouldin": 0.9879899562208596,
+      "calinski_harabasz": 232645.4419257667,
+      "inertia": 26379.12939453125
+    },
+    {
+      "method": "kmedoids_pam_reduced_sample",
+      "silhouette": 0.39089202880859375,
+      "davies_bouldin": 1.0251531228553856,
+      "calinski_harabasz": 821.809871041865,
+      "inertia": 87.48753547668457
+    },
+    {
+      "method": "agnes_reduced_sample",
+      "silhouette": 0.3508094251155853,
+      "davies_bouldin": 1.126252506019207,
+      "calinski_harabasz": 682.8338051548843,
+      "inertia": 99.8922290802002
+    }
+  ]
+}

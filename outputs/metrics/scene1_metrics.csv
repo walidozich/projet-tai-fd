@@ -1,0 +1,2 @@
+scene,method,accuracy,mean_iou,mean_f1,internal_silhouette,internal_davies_bouldin,internal_calinski_harabasz,internal_inertia
+scene1,kmeans_rgb_xy_k4,0.6257983391595499,0.505713000107824,0.6429219222378446,0.3948841691017151,0.9879899562208596,232645.4419257667,26379.12939453125
