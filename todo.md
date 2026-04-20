@@ -58,15 +58,15 @@ Projet TAI-FD/
 
 ## Chargement du dataset
 
-- [ ] Telecharger le dataset depuis le lien Google Drive fourni dans l'enonce.
-- [ ] Placer les donnees dans `dataset/`.
-- [ ] Identifier les 4 scenes.
-- [ ] Identifier les masques Ground Truth correspondants.
-- [ ] Pour la scene 4, identifier l'image couleur et l'image contenant l'information supplementaire.
-- [ ] Verifier que chaque image a un masque associe.
-- [ ] Verifier que les dimensions image/masque sont compatibles.
-- [ ] Redimensionner uniquement si necessaire, en gardant la coherence avec le masque.
-- [ ] Sauvegarder un resume du dataset dans `outputs/reports/dataset_summary.md`.
+- [x] Telecharger le dataset depuis le lien Google Drive fourni dans l'enonce. Dataset already present in `dataset/`.
+- [x] Placer les donnees dans `dataset/`.
+- [x] Identifier les 4 scenes.
+- [x] Identifier les masques Ground Truth correspondants.
+- [x] Pour la scene 4, identifier l'image couleur et l'image contenant l'information supplementaire.
+- [x] Verifier que chaque image a un masque associe.
+- [x] Verifier que les dimensions image/masque sont compatibles. Raw mismatches found and documented.
+- [x] Redimensionner uniquement si necessaire, en gardant la coherence avec le masque. Implemented in-memory alignment: bilinear for extra images, nearest-neighbor for masks.
+- [x] Sauvegarder un resume du dataset dans `outputs/reports/dataset_summary.md`.
 
 ## Exploration des donnees
 
