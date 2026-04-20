@@ -125,19 +125,19 @@ Projet TAI-FD/
 
 ## Methodes FD a implementer/utiliser
 
-- [ ] K-Means.
-- [ ] K-Medoids / PAM.
-- [ ] AGNES : clustering hierarchique agglomeratif.
-- [ ] DIANA : clustering divisif ou approximation documentee si implementation complete trop lourde.
-- [ ] DBSCAN.
-- [ ] Methode du coude pour choisir `k`.
-- [ ] Detection automatique du coude si possible.
-- [ ] Calcul de distances pairwise si necessaire.
-- [ ] Calcul de l'inertie/SSE.
-- [ ] PCA 2D pour visualiser les clusters.
-- [ ] Silhouette score.
-- [ ] Davies-Bouldin score.
-- [ ] Calinski-Harabasz score.
+- [x] K-Means.
+- [x] K-Medoids / PAM.
+- [x] AGNES : clustering hierarchique agglomeratif.
+- [x] DIANA : clustering divisif ou approximation documentee si implementation complete trop lourde.
+- [x] DBSCAN.
+- [x] Methode du coude pour choisir `k`.
+- [x] Detection automatique du coude si possible.
+- [x] Calcul de distances pairwise si necessaire.
+- [x] Calcul de l'inertie/SSE.
+- [x] PCA 2D pour visualiser les clusters.
+- [x] Silhouette score.
+- [x] Davies-Bouldin score.
+- [x] Calinski-Harabasz score.
 
 ## Scene 1 - Chat, ciel, sol, arbres
 
