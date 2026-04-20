@@ -234,21 +234,21 @@ Objectif : extraire uniquement la personne en utilisant l'image couleur et l'inf
 
 ## Evaluation des performances
 
-- [ ] Implementer la matrice de confusion binaire : TP, TN, FP, FN.
-- [ ] Implementer accuracy.
-- [ ] Implementer precision.
-- [ ] Implementer recall.
-- [ ] Implementer F1-score / Dice.
-- [ ] Implementer IoU / Jaccard.
-- [ ] Implementer evaluation multi-classes pour scene 1.
-- [ ] Implementer IoU par classe.
-- [ ] Implementer mean IoU.
-- [ ] Gerer les divisions par zero proprement.
-- [ ] Verifier que les masques predits et Ground Truth ont les memes labels.
-- [ ] Verifier que les masques binaires utilisent bien 0/1 ou 0/255 de maniere coherente.
-- [ ] Sauvegarder les metriques en CSV.
-- [ ] Sauvegarder les metriques en JSON.
-- [ ] Produire un tableau comparatif final par scene.
+- [x] Implementer la matrice de confusion binaire : TP, TN, FP, FN.
+- [x] Implementer accuracy.
+- [x] Implementer precision.
+- [x] Implementer recall.
+- [x] Implementer F1-score / Dice.
+- [x] Implementer IoU / Jaccard.
+- [x] Implementer evaluation multi-classes pour scene 1.
+- [x] Implementer IoU par classe.
+- [x] Implementer mean IoU.
+- [x] Gerer les divisions par zero proprement.
+- [x] Verifier que les masques predits et Ground Truth ont les memes labels.
+- [x] Verifier que les masques binaires utilisent bien 0/1 ou 0/255 de maniere coherente.
+- [x] Sauvegarder les metriques en CSV.
+- [x] Sauvegarder les metriques en JSON.
+- [x] Produire un tableau comparatif final par scene.
 
 ## Visualisations a produire
 
