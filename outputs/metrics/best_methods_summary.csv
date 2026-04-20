@@ -1,0 +1,5 @@
+scene,best_method,method_type,primary_score,score_name
+scene1,kmeans_rgb_xy_k4,FD,0.505713000107824,mean IoU
+scene2,high_percentile_94_largest_component,TAI,0.2100449775112443,IoU
+scene3,tai_hsv_s20_v150_open,TAI,0.2319007124798897,IoU
+scene4,kmeans_rgb_extra_xy_k5,FD,0.693544174561341,IoU

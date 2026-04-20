@@ -265,13 +265,13 @@ Objectif : extraire uniquement la personne en utilisant l'image couleur et l'inf
 
 ## Comparaison des methodes
 
-- [ ] Pour chaque scene, tester au moins une methode TAI et une methode FD quand c'est pertinent.
-- [ ] Pour chaque scene, identifier la meilleure methode selon IoU/Dice.
-- [ ] Comparer les avantages et limites des methodes TAI.
-- [ ] Comparer les avantages et limites des methodes FD.
-- [ ] Expliquer pourquoi une methode fonctionne mieux sur une scene donnee.
-- [ ] Documenter les cas d'echec.
-- [ ] Ne pas utiliser de methodes hors programme comme reseaux de neurones, U-Net, YOLO, SAM, segmentation deep learning.
+- [x] Pour chaque scene, tester au moins une methode TAI et une methode FD quand c'est pertinent.
+- [x] Pour chaque scene, identifier la meilleure methode selon IoU/Dice.
+- [x] Comparer les avantages et limites des methodes TAI.
+- [x] Comparer les avantages et limites des methodes FD.
+- [x] Expliquer pourquoi une methode fonctionne mieux sur une scene donnee.
+- [x] Documenter les cas d'echec.
+- [x] Ne pas utiliser de methodes hors programme comme reseaux de neurones, U-Net, YOLO, SAM, segmentation deep learning.
 
 ## Rapport final
 
